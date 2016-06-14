@@ -1,3 +1,30 @@
 /* theme definitions */
 
 @import "themeBuilder";
+
+.desert {
+    @include theme-builder( $theme-primary:     #17bebb,
+                            $theme-success:     #2e282a,
+                            $theme-info:        #cd5334,
+                            $theme-warning:     #edb88b,
+                            $theme-danger:      #fad8d6
+                    )
+}
+
+.rainbow {
+    @include theme-builder( $theme-primary:     #ffbe0b,
+                            $theme-success:     #fb5607,
+                            $theme-info:        #ff006e,
+                            $theme-warning:     #8338ec,
+                            $theme-danger:      #3a86ff
+                    )
+}
+
+.aqua {
+    @include theme-builder( $theme-primary:     #0b132b,
+                            $theme-success:     #1c2541,
+                            $theme-info:        #3a506b,
+                            $theme-warning:     #5bc0be,
+                            $theme-danger:      #6fffe9
+                    )
+}

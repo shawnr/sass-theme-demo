@@ -6,34 +6,69 @@
                         $theme-warning: #f0ad4e,
                         $theme-danger: #d9534f
                     ) {
+    color: $theme-info;
+    @if lightness($theme-info) <= 50 {
+        background-color: #fff; // TODO: Make this based on darkness
+    } @else {
+        background-color: #666;
+    }
 
     .btn-primary {
         @if lightness($theme-primary) <= 50 {
             color: #fff; // TODO: Make this based on darkness
         } @else {
-            color: #000;
+            color: #666;
         }
         background-color: $theme-primary;
         border-color: $theme-primary;
     }
     .btn-success {
+        @if lightness($theme-success) <= 50 {
+            color: #fff; // TODO: Make this based on darkness
+        } @else {
+            color: #666;
+        }
         color: #fff; // TODO: Make this based on darkness
         background-color: $theme-success;
         border-color: $theme-success;
     }
     .btn-info {
+        @if lightness($theme-info) <= 50 {
+            color: #fff; // TODO: Make this based on darkness
+        } @else {
+            color: #666;
+        }
         color: #fff; // TODO: Make this based on darkness
         background-color: $theme-info;
         border-color: $theme-info;
     }
     .btn-warning {
+        @if lightness($theme-warning) <= 50 {
+            color: #fff; // TODO: Make this based on darkness
+        } @else {
+            color: #666;
+        }
         color: #fff; // TODO: Make this based on darkness
         background-color: $theme-warning;
         border-color: $theme-warning;
     }
     .btn-danger {
+        @if lightness($theme-danger) <= 50 {
+            color: #fff; // TODO: Make this based on darkness
+        } @else {
+            color: #666;
+        }
         color: #fff; // TODO: Make this based on darkness
         background-color: $theme-danger;
         border-color: $theme-danger;
+    }
+
+    .jumbotron {
+        @if lightness($theme-info) <= 50 {
+            color: #fff; // TODO: Make this based on darkness
+        } @else {
+            color: #666;
+        }
+        background-color: $theme-info;
     }
 }
