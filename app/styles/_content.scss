@@ -1,4 +1,15 @@
 /* Site Content Styles */
+.theme-toggle {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  select#theme-selector {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
 
 .browserupgrade {
   margin: 0.2em 0;
