@@ -13,6 +13,8 @@
         background-color: #666;
     }
 
+
+
     .btn-primary {
         @if lightness($theme-primary) <= 50 {
             color: #fff; // TODO: Make this based on darkness
@@ -21,6 +23,9 @@
         }
         background-color: $theme-primary;
         border-color: $theme-primary;
+    }
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+        @extend .btn-primary;
     }
     .btn-success {
         @if lightness($theme-success) <= 50 {

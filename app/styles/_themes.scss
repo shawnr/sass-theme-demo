@@ -2,6 +2,15 @@
 
 @import "themeBuilder";
 
+.royale {
+    @include theme-builder( $theme-primary:     #e63946,
+                            $theme-success:     #f1faee,
+                            $theme-info:        #a8dadc,
+                            $theme-warning:     #457b9d,
+                            $theme-danger:      #1d3557
+                    )
+}
+
 .desert {
     @include theme-builder( $theme-primary:     #17bebb,
                             $theme-success:     #2e282a,
